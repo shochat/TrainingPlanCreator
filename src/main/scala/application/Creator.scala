@@ -13,19 +13,78 @@ class Creator(raceDate: DateTime, raceDistance: Int, workoutDaysAmountInWeek: In
 
   def insertVolumeWorkout() = {
     for (i <- 0 until m_weeksTillRace) {
-      if(m_plan(i) == null) m_plan(i) = new WeeklyPlan
+      if (m_plan(i) == null) m_plan(i) = new WeeklyPlan
       m_plan(i) addWorkout new Workout(WorkoutType.VOLUME_RUN, i * 9, i * 5, ApplicationConstants.VOLUME_RUN_DAY)
     }
   }
 
-  def print() = {
+  def insertQualityWorkout() = {
+    for (i <- 0 until m_weeksTillRace) {
+      if (m_plan(i) == null) m_plan(i) = new WeeklyPlan
+      m_plan(i) addWorkout new Workout(WorkoutType.QUALITY_RUN, i * 7, i * 3, ApplicationConstants.QUALITY_RUN_DAY)
+    }
+  }
 
-      for (i <- 0 until m_plan.length) {
-        val weeklyPlan: WeeklyPlan = m_plan(i)
-        for (workout <- weeklyPlan.m_weeklySchedule)
-          yield String.format("Week " + i + ":\n\tWorkoutType: " + workout.m_workoutType)
+  def insertTempoWorkout() = {
+    for (i <- 0 until m_weeksTillRace) {
+      if (m_plan(i) == null) m_plan(i) = new WeeklyPlan
+      m_plan(i) addWorkout new Workout(WorkoutType.TEMPO_RUN, i * 5, i * 8, ApplicationConstants.TEMPO_RUN_DAY)
+    }
+  }
+
+  def insertRecoveryWorkout() = {
+    for (i <- 0 until m_weeksTillRace) {
+      if (m_plan(i) == null) m_plan(i) = new WeeklyPlan
+      m_plan(i) addWorkout new Workout(WorkoutType.RECOVERY_RUN, i * 6, i * 2, ApplicationConstants.RECOVERY_RUN_DAY)
+    }
+  }
+
+  def insertLiteVolumeWorkout() = {
+    for (i <- 0 until m_weeksTillRace) {
+      if (m_plan(i) == null) m_plan(i) = new WeeklyPlan
+      m_plan(i) addWorkout new Workout(WorkoutType.LITE_VOLUME_RUN, i * 6, i * 2, ApplicationConstants.LITE_VOLUME_DAY)
+    }
+  }
+
+  def insertChangedWorkout() = ???
+
+  def insertRestDay() = {
+    for (i <- 0 until m_weeksTillRace) {
+      if (m_plan(i) == null) m_plan(i) = new WeeklyPlan
+      m_plan(i) addWorkout new Workout(WorkoutType.REST, 0, 0, ApplicationConstants.REST_DAY)
+    }
+  }
+
+  def createPlan() ={
+    if(workoutDaysAmountInWeek < 4 ) {
+      println("Can't create serious play for less than 4 days")
+    } else {
+      insertVolumeWorkout
+      insertQualityWorkout
+      insertTempoWorkout
+      insertRecoveryWorkout
+      if(workoutDaysAmountInWeek > 4) insertLiteVolumeWorkout
+      if(workoutDaysAmountInWeek > 5) {
+        insertChangedWorkout
+        insertRestDay
       }
     }
+  }
+
+  override def toString() :String = {
+    val sb :StringBuffer = new StringBuffer
+    sb.append("WeeksTillRace: %d\n".format(m_weeksTillRace))
+    for (i <- 1 to m_plan.length) {
+      val weeklyPlan: WeeklyPlan = m_plan(i - 1)
+      sb.append("Week %d (total %d km) schedule:".format(i, weeklyPlan.m_weeklyTotal))
+      for (j <- 0 until weeklyPlan.m_weeklySchedule.length) {
+        val workout: Workout = weeklyPlan.m_weeklySchedule(j)
+        sb.append("\n\tWorkwout %d:\tworkoutType: %s\tDistance: %d\tDuration: %d\tDayOfWeek: %d".format(j + 1,workout.m_workoutType, workout.m_distance, workout.m_duration, workout.m_dayOfWeek))
+      }
+      sb.append("\n")
+    }
+    return sb.toString
+  }
 }
 
 object Creator {
@@ -35,10 +94,7 @@ object Creator {
   
   def main(args: Array[String]) {
     val creator: Creator = Creator(m_raceDate, 42, 5)
-    creator.insertVolumeWorkout()
-    println(creator.print())
-
-
+    creator.createPlan()
+    println(creator.toString)
   }
-
 }

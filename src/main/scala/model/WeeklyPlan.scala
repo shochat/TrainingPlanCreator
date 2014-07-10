@@ -7,7 +7,10 @@ import scala.collection.mutable.ListBuffer
  */
 class WeeklyPlan {
   val m_weeklySchedule: ListBuffer[Workout] = ListBuffer()
-  val m_weeklyTotal: Int = m_weeklySchedule.map(workout => workout.m_distance).sum
+  var m_weeklyTotal: Int = m_weeklySchedule.map(workout => workout.m_distance).sum
 
-  def addWorkout(workout: Workout) = m_weeklySchedule += workout
+  def addWorkout(workout: Workout) = {
+    m_weeklySchedule += workout
+    m_weeklyTotal += workout.m_distance
+  }
 }

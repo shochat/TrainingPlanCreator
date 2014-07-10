@@ -11,5 +11,6 @@ object WorkoutType extends Enumeration{
   FARTLEK_RUN,
   RECOVERY_RUN,
   LITE_VOLUME_RUN,
+  REST,
   CHANGED_RUN = Value
 }
