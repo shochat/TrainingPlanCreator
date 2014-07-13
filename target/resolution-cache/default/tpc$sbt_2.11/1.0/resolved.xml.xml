@@ -4,7 +4,7 @@
 		module="tpc$sbt_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20140709153256"
+		publication="20140710161906"
 	/>
 	<configurations>
 		<conf name="default" visibility="public"/>
@@ -12,7 +12,7 @@
 	<publications>
 	</publications>
 	<dependencies>
-		<dependency org="org.scala-sbt" name="sbt" rev="0.13.2" conf="default->default(compile)"/>
-		<dependency org="org.jetbrains" name="sbt-structure" rev="2.4.0" conf="default->default(compile)" sbtVersion="0.13" scalaVersion="2.10"/>
+		<dependency org="org.scala-sbt" name="sbt" rev="0.13.0" conf="default->default(compile)"/>
+		<dependency org="org.jetbrains" name="sbt-structure" rev="2.3.2" conf="default->default(compile)" sbtVersion="0.13" scalaVersion="2.10"/>
 	</dependencies>
 </ivy-module>

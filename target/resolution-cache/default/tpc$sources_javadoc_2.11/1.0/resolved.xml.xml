@@ -4,7 +4,7 @@
 		module="tpc$sources_javadoc_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20140709153257"
+		publication="20140710161907"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
