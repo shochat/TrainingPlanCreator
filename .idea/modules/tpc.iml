@@ -30,7 +30,6 @@
     <orderEntry type="library" name="SBT: joda-time:joda-time:2.3" level="project" />
     <orderEntry type="library" name="SBT: org.joda:joda-convert:1.2" level="project" />
     <orderEntry type="library" name="SBT: org.scala-lang:scala-library:2.11.1" level="project" />
-    <orderEntry type="library" name="SBT:: scala-compiler-bundle:2.11.1" level="project" />
   </component>
 </module>
 
