@@ -55,7 +55,12 @@ class Creator(raceDate: DateTime, raceDistance: Int, workoutDaysAmountInWeek: In
     }
   }
 
-  def createPlan() ={
+  def insertPreparatoryRace(raceDate: DateTime, raceLength: Int) = {
+    val raceWeekAndDayOfWeek = TimeCalculator.calculateEventWeekFromNowAndDayOfWeek(raceDate)
+    m_plan(raceWeekAndDayOfWeek._1).addWorkout(new Workout(WorkoutType.PREPARATORY_RACE, 999999, raceLength, raceWeekAndDayOfWeek._2))
+  }
+  
+  def createPlan() = {
     if(workoutDaysAmountInWeek < 4 ) {
       println("Can't create serious play for less than 4 days")
     } else {
@@ -69,6 +74,8 @@ class Creator(raceDate: DateTime, raceDistance: Int, workoutDaysAmountInWeek: In
         insertRestDay
       }
     }
+    if(workoutDaysAmountInWeek == 7) println("You need at least one day of rest")
+    if(workoutDaysAmountInWeek > 7) println("You entered a number too high, try again")
   }
 
   override def toString() :String = {
@@ -90,11 +97,14 @@ class Creator(raceDate: DateTime, raceDistance: Int, workoutDaysAmountInWeek: In
 object Creator {
   val m_raceDate: DateTime = new DateTime(2014,10,18,0,0,0)
 
-  def apply(raceDate: DateTime, raceDistance: Int, workoutDaysAmountInWeek: Int) = new Creator(raceDate, raceDistance, workoutDaysAmountInWeek)
+  //def apply(raceDate: DateTime, raceDistance: Int, workoutDaysAmountInWeek: Int) = new Creator(raceDate, raceDistance, workoutDaysAmountInWeek)
   
   def main(args: Array[String]) {
-    val creator: Creator = Creator(m_raceDate, 42, 5)
-    creator.createPlan()
-    println(creator.toString)
+    val test = TimeCalculator.calculateEventWeekFromNowAndDayOfWeek(m_raceDate)
+    println(test._1 + " => " + test._2)
+
+//    val creator: Creator = Creator(m_raceDate, 42, 5)
+//    creator.createPlan()
+//    println(creator.toString)
   }
 }

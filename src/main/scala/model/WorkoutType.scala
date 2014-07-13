@@ -12,5 +12,6 @@ object WorkoutType extends Enumeration{
   RECOVERY_RUN,
   LITE_VOLUME_RUN,
   REST,
+  PREPARATORY_RACE,
   CHANGED_RUN = Value
 }
