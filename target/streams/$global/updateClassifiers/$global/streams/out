@@ -6,7 +6,7 @@
 [debug] == resolving dependencies for default#tpc$sources_javadoc_2.11;1.0 [compile]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.11.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@606dbdc1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@246de5e3
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.1
 [debug] 	local: revision in cache: org.scala-lang#scala-library;2.11.1
 [debug] 	found org.scala-lang#scala-library;2.11.1 in sbt-chain
@@ -16,7 +16,7 @@
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [compile->master]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->com.github.nscala-time#nscala-time_2.11;1.2.0 [compile->default(compile)]
 [info] Resolving com.github.nscala-time#nscala-time_2.11;1.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7b277da2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@49422757
 [debug] sbt-chain: module revision found in cache: com.github.nscala-time#nscala-time_2.11;1.2.0
 [debug] 	local: revision in cache: com.github.nscala-time#nscala-time_2.11;1.2.0
 [debug] 	found com.github.nscala-time#nscala-time_2.11;1.2.0 in sbt-chain
@@ -25,7 +25,7 @@
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->com.github.nscala-time#nscala-time_2.11;1.2.0 [compile->master]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->joda-time#joda-time;2.3 [compile->default(compile)]
 [info] Resolving joda-time#joda-time;2.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1a7b6ab0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4865c46e
 [debug] sbt-chain: module revision found in cache: joda-time#joda-time;2.3
 [debug] 	local: revision in cache: joda-time#joda-time;2.3
 [debug] 	found joda-time#joda-time;2.3 in sbt-chain
@@ -34,13 +34,22 @@
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->joda-time#joda-time;2.3 [compile->master]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [compile->default(compile)]
 [info] Resolving org.joda#joda-convert;1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@65bbd743
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7ab890f6
 [debug] sbt-chain: module revision found in cache: org.joda#joda-convert;1.2
 [debug] 	local: revision in cache: org.joda#joda-convert;1.2
 [debug] 	found org.joda#joda-convert;1.2 in sbt-chain
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [compile->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [compile->compile]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [compile->master]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->default(compile)]
+[info] Resolving org.scala-lang.modules#scala-xml_2.11;1.0.2 ...
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3ef88e3e
+[debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.2
+[debug] 	local: revision in cache: org.scala-lang.modules#scala-xml_2.11;1.0.2
+[debug] 	found org.scala-lang.modules#scala-xml_2.11;1.0.2 in sbt-chain
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->runtime]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->compile]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->master]
 [debug] resolving dependencies for configuration 'runtime'
 [debug] == resolving dependencies for default#tpc$sources_javadoc_2.11;1.0 [runtime]
 [debug] == resolving dependencies for default#tpc$sources_javadoc_2.11;1.0 [compile]
@@ -60,6 +69,10 @@
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [compile->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [compile->compile]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [compile->master]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->default(compile)]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->runtime]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->compile]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->master]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [runtime->default(compile)]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [runtime->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [runtime->compile]
@@ -76,6 +89,10 @@
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [runtime->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [runtime->compile]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [runtime->master]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime->default(compile)]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime->runtime]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime->compile]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime->master]
 [debug] resolving dependencies for configuration 'test'
 [debug] == resolving dependencies for default#tpc$sources_javadoc_2.11;1.0 [test]
 [debug] == resolving dependencies for default#tpc$sources_javadoc_2.11;1.0 [runtime]
@@ -96,6 +113,10 @@
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [compile->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [compile->compile]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [compile->master]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->default(compile)]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->runtime]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->compile]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->master]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [runtime->default(compile)]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [runtime->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [runtime->compile]
@@ -112,6 +133,10 @@
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [runtime->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [runtime->compile]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [runtime->master]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime->default(compile)]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime->runtime]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime->compile]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime->master]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [test->default(compile)]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [test->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [test->compile]
@@ -128,6 +153,10 @@
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [test->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [test->compile]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [test->master]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test->default(compile)]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test->runtime]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test->compile]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test->master]
 [debug] resolving dependencies for configuration 'provided'
 [debug] == resolving dependencies for default#tpc$sources_javadoc_2.11;1.0 [provided]
 [debug] resolving dependencies for configuration 'optional'
@@ -151,6 +180,10 @@
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [compile->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [compile->compile]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [compile->master]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->default(compile)]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->runtime]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->compile]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->master]
 [debug] == resolving dependencies for default#tpc$sources_javadoc_2.11;1.0 [optional]
 [debug] == resolving dependencies for default#tpc$sources_javadoc_2.11;1.0 [provided]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [compile-internal->default(compile)]
@@ -169,6 +202,10 @@
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [compile-internal->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [compile-internal->compile]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [compile-internal->master]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile-internal->default(compile)]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile-internal->runtime]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile-internal->compile]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile-internal->master]
 [debug] resolving dependencies for configuration 'runtime-internal'
 [debug] == resolving dependencies for default#tpc$sources_javadoc_2.11;1.0 [runtime-internal]
 [debug] == resolving dependencies for default#tpc$sources_javadoc_2.11;1.0 [runtime]
@@ -189,6 +226,10 @@
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [compile->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [compile->compile]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [compile->master]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->default(compile)]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->runtime]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->compile]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->master]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [runtime->default(compile)]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [runtime->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [runtime->compile]
@@ -205,6 +246,10 @@
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [runtime->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [runtime->compile]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [runtime->master]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime->default(compile)]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime->runtime]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime->compile]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime->master]
 [debug] == resolving dependencies for default#tpc$sources_javadoc_2.11;1.0 [optional]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [runtime-internal->default(compile)]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [runtime-internal->runtime]
@@ -222,6 +267,10 @@
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [runtime-internal->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [runtime-internal->compile]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [runtime-internal->master]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime-internal->default(compile)]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime-internal->runtime]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime-internal->compile]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime-internal->master]
 [debug] resolving dependencies for configuration 'test-internal'
 [debug] == resolving dependencies for default#tpc$sources_javadoc_2.11;1.0 [test-internal]
 [debug] == resolving dependencies for default#tpc$sources_javadoc_2.11;1.0 [test]
@@ -243,6 +292,10 @@
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [compile->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [compile->compile]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [compile->master]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->default(compile)]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->runtime]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->compile]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [compile->master]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [runtime->default(compile)]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [runtime->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [runtime->compile]
@@ -259,6 +312,10 @@
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [runtime->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [runtime->compile]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [runtime->master]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime->default(compile)]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime->runtime]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime->compile]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [runtime->master]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [test->default(compile)]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [test->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [test->compile]
@@ -275,6 +332,10 @@
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [test->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [test->compile]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [test->master]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test->default(compile)]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test->runtime]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test->compile]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test->master]
 [debug] == resolving dependencies for default#tpc$sources_javadoc_2.11;1.0 [optional]
 [debug] == resolving dependencies for default#tpc$sources_javadoc_2.11;1.0 [provided]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [test-internal->default(compile)]
@@ -293,6 +354,10 @@
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [test-internal->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [test-internal->compile]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.joda#joda-convert;1.2 [test-internal->master]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test-internal->default(compile)]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test-internal->runtime]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test-internal->compile]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [test-internal->master]
 [debug] resolving dependencies for configuration 'plugin'
 [debug] == resolving dependencies for default#tpc$sources_javadoc_2.11;1.0 [plugin]
 [debug] resolving dependencies for configuration 'sources'
@@ -307,6 +372,10 @@
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [scala-tool->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [scala-tool->compile]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [scala-tool->master]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [scala-tool->default(compile)]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [scala-tool->runtime]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [scala-tool->compile]
+[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [scala-tool->master]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-compiler;2.11.1 [scala-tool->default(compile)]
 [info] Resolving org.scala-lang#scala-compiler;2.11.1 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scala-lang#scala-compiler;2.11.1 {scala-tool=[default(compile)]}
@@ -326,15 +395,6 @@
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-reflect;2.11.1 [scala-tool->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-reflect;2.11.1 [scala-tool->compile]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang#scala-reflect;2.11.1 [scala-tool->master]
-[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [scala-tool->default(compile)]
-[info] Resolving org.scala-lang.modules#scala-xml_2.11;1.0.2 ...
-[debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-xml_2.11;1.0.2 {scala-tool=[default(compile)]}
-[debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-xml_2.11;1.0.2
-[debug] 	local: revision in cache: org.scala-lang.modules#scala-xml_2.11;1.0.2
-[debug] 	found org.scala-lang.modules#scala-xml_2.11;1.0.2 in sbt-chain
-[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [scala-tool->runtime]
-[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [scala-tool->compile]
-[debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-xml_2.11;1.0.2 [scala-tool->master]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 [scala-tool->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 ...
 [debug] sbt-chain: Checking cache for: dependency: org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1 {scala-tool=[default(compile)]}
@@ -353,7 +413,7 @@
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->jline#jline;2.11 [scala-tool->runtime]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->jline#jline;2.11 [scala-tool->compile]
 [debug] == resolving dependencies default#tpc$sources_javadoc_2.11;1.0->jline#jline;2.11 [scala-tool->master]
-[debug] circular dependency found: org.scala-lang#scala-compiler;2.11.1->org.scala-lang.modules#scala-xml_2.11;1.0.2->...
+[debug] circular dependency found: org.scala-lang.modules#scala-xml_2.11;1.0.2->org.scala-lang#scala-compiler;2.11.1->...
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.11.1!scala-library.jar(doc)
@@ -368,28 +428,29 @@
 [debug] 	[NOT REQUIRED] org.joda#joda-convert;1.2!joda-convert.jar
 [debug] 	[NOT REQUIRED] org.joda#joda-convert;1.2!joda-convert.jar(doc)
 [debug] 	[NOT REQUIRED] org.joda#joda-convert;1.2!joda-convert.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.2!scala-xml_2.11.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.2!scala-xml_2.11.jar
+[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.2!scala-xml_2.11.jar(doc)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.1!scala-compiler.jar(doc)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.11.1!scala-compiler.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.1!scala-reflect.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.1!scala-reflect.jar(doc)
-[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.2!scala-xml_2.11.jar(src)
-[debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.2!scala-xml_2.11.jar(doc)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1!scala-parser-combinators_2.11.jar(doc)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1!scala-parser-combinators_2.11.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.11!jline.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.11!jline.jar(doc)
-[debug] :: resolution report :: resolve 157ms :: artifacts dl 20ms
-[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 compile produced in F:\tpc\target\resolution-cache\reports\default-tpc$sources_javadoc_2.11-compile.xml
-[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 runtime produced in F:\tpc\target\resolution-cache\reports\default-tpc$sources_javadoc_2.11-runtime.xml
-[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 test produced in F:\tpc\target\resolution-cache\reports\default-tpc$sources_javadoc_2.11-test.xml
-[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 provided produced in F:\tpc\target\resolution-cache\reports\default-tpc$sources_javadoc_2.11-provided.xml
-[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 optional produced in F:\tpc\target\resolution-cache\reports\default-tpc$sources_javadoc_2.11-optional.xml
-[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 compile-internal produced in F:\tpc\target\resolution-cache\reports\default-tpc$sources_javadoc_2.11-compile-internal.xml
-[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 runtime-internal produced in F:\tpc\target\resolution-cache\reports\default-tpc$sources_javadoc_2.11-runtime-internal.xml
-[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 test-internal produced in F:\tpc\target\resolution-cache\reports\default-tpc$sources_javadoc_2.11-test-internal.xml
-[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 plugin produced in F:\tpc\target\resolution-cache\reports\default-tpc$sources_javadoc_2.11-plugin.xml
-[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 sources produced in F:\tpc\target\resolution-cache\reports\default-tpc$sources_javadoc_2.11-sources.xml
-[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 docs produced in F:\tpc\target\resolution-cache\reports\default-tpc$sources_javadoc_2.11-docs.xml
-[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 pom produced in F:\tpc\target\resolution-cache\reports\default-tpc$sources_javadoc_2.11-pom.xml
-[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 scala-tool produced in F:\tpc\target\resolution-cache\reports\default-tpc$sources_javadoc_2.11-scala-tool.xml
-[debug] 	resolve done (157ms resolve - 20ms download)
+[debug] :: resolution report :: resolve 212ms :: artifacts dl 36ms
+[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 compile produced in /Users/ilan.s/tpc/target/resolution-cache/reports/default-tpc$sources_javadoc_2.11-compile.xml
+[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 runtime produced in /Users/ilan.s/tpc/target/resolution-cache/reports/default-tpc$sources_javadoc_2.11-runtime.xml
+[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 test produced in /Users/ilan.s/tpc/target/resolution-cache/reports/default-tpc$sources_javadoc_2.11-test.xml
+[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 provided produced in /Users/ilan.s/tpc/target/resolution-cache/reports/default-tpc$sources_javadoc_2.11-provided.xml
+[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 optional produced in /Users/ilan.s/tpc/target/resolution-cache/reports/default-tpc$sources_javadoc_2.11-optional.xml
+[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 compile-internal produced in /Users/ilan.s/tpc/target/resolution-cache/reports/default-tpc$sources_javadoc_2.11-compile-internal.xml
+[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 runtime-internal produced in /Users/ilan.s/tpc/target/resolution-cache/reports/default-tpc$sources_javadoc_2.11-runtime-internal.xml
+[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 test-internal produced in /Users/ilan.s/tpc/target/resolution-cache/reports/default-tpc$sources_javadoc_2.11-test-internal.xml
+[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 plugin produced in /Users/ilan.s/tpc/target/resolution-cache/reports/default-tpc$sources_javadoc_2.11-plugin.xml
+[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 sources produced in /Users/ilan.s/tpc/target/resolution-cache/reports/default-tpc$sources_javadoc_2.11-sources.xml
+[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 docs produced in /Users/ilan.s/tpc/target/resolution-cache/reports/default-tpc$sources_javadoc_2.11-docs.xml
+[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 pom produced in /Users/ilan.s/tpc/target/resolution-cache/reports/default-tpc$sources_javadoc_2.11-pom.xml
+[debug] 	report for default#tpc$sources_javadoc_2.11;1.0 scala-tool produced in /Users/ilan.s/tpc/target/resolution-cache/reports/default-tpc$sources_javadoc_2.11-scala-tool.xml
+[debug] 	resolve done (212ms resolve - 36ms download)

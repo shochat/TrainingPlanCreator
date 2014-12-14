@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/tpc.iml" filepath="$PROJECT_DIR$/.idea/modules/tpc.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tpc-build.iml" filepath="$PROJECT_DIR$/.idea/modules/tpc-build.iml" />
     </modules>
   </component>
 </project>

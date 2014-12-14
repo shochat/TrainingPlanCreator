@@ -7,7 +7,7 @@
 [debug] == resolving dependencies for default#tpc_2.11;1.0 [compile]
 [debug] == resolving dependencies default#tpc_2.11;1.0->org.scala-lang#scala-library;2.11.1 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.11.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@569f3acb
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@982c806
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.1
 [debug] 	local: revision in cache: org.scala-lang#scala-library;2.11.1
 [debug] 	found org.scala-lang#scala-library;2.11.1 in sbt-chain
@@ -269,7 +269,7 @@
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.2!scala-xml_2.11.jar(bundle)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-parser-combinators_2.11;1.0.1!scala-parser-combinators_2.11.jar(bundle)
 [debug] 	[NOT REQUIRED] jline#jline;2.11!jline.jar
-[debug] :: resolution report :: resolve 94ms :: artifacts dl 4ms
+[debug] :: resolution report :: resolve 77ms :: artifacts dl 4ms
 [debug] 	report for default#tpc_2.11;1.0 compile produced in /Users/ilan.s/tpc/target/resolution-cache/reports/default-tpc_2.11-compile.xml
 [debug] 	report for default#tpc_2.11;1.0 runtime produced in /Users/ilan.s/tpc/target/resolution-cache/reports/default-tpc_2.11-runtime.xml
 [debug] 	report for default#tpc_2.11;1.0 test produced in /Users/ilan.s/tpc/target/resolution-cache/reports/default-tpc_2.11-test.xml
@@ -283,6 +283,5 @@
 [debug] 	report for default#tpc_2.11;1.0 docs produced in /Users/ilan.s/tpc/target/resolution-cache/reports/default-tpc_2.11-docs.xml
 [debug] 	report for default#tpc_2.11;1.0 pom produced in /Users/ilan.s/tpc/target/resolution-cache/reports/default-tpc_2.11-pom.xml
 [debug] 	report for default#tpc_2.11;1.0 scala-tool produced in /Users/ilan.s/tpc/target/resolution-cache/reports/default-tpc_2.11-scala-tool.xml
-[debug] 	resolve done (94ms resolve - 4ms download)
+[debug] 	resolve done (77ms resolve - 4ms download)
 [info] Done updating.
-.
