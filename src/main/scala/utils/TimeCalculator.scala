@@ -1,7 +1,6 @@
 package utils
 
-import org.joda.time.{Weeks, DateTime, Days}
-import org.joda.time.DateTime.Property
+import org.joda.time.{DateTime, Days, Weeks}
 
 /**
  * Created by ilan.s on 7/9/2014.
