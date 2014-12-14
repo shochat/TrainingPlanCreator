@@ -1,0 +1,31 @@
+<distances>
+    <marathom>
+        <week key="-1" value="25" />
+        <week key="-2" value="36" />
+        <week key="-3" value="36" />
+        <week key="-4" value="30" />
+        <week key="-5" value="34" />
+        <week key="-6" value="34" />
+        <week key="-7" value="28" />
+        <week key="-8" value="30" />
+        <week key="-9" value="30" />
+        <week key="-10" value="24" />
+        <week key="-11" value="26" />
+        <week key="-12" value="26" />
+        <week key="-13" value="22" />
+        <week key="-14" value="22" />
+        <week key="-15" value="22" />
+        <week key="-16" value="16" />
+        <week key="-17" value="18" />
+        <week key="-18" value="18" />
+        <week key="-19" value="12" />
+    </marathom>
+
+    <half-marathon>
+
+    </half-marathon>
+
+    <k10>
+
+    </k10>
+</distances>
