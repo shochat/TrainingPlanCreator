@@ -1,10 +1,10 @@
 package application
 
 import com.github.nscala_time.time.Imports._
-import model.{WorkoutType, Workout, WeeklyPlan}
-import utils.{ApplicationConstants, TimeCalculator}
+import model.{WeeklyPlan, Workout, WorkoutType}
+import utils.{ApplicationConstants, DbManager, TimeCalculator}
+
 import scala.xml._
-import java.time.format.DateTimeFormatter
 
 class Creator(raceDate: DateTime, raceDistance: Int, workoutDaysAmountInWeek: Int, targetPace: Float) {
   val m_weeksTillRace: Int = new TimeCalculator(raceDate).m_weeksTillRace
@@ -18,6 +18,10 @@ class Creator(raceDate: DateTime, raceDistance: Int, workoutDaysAmountInWeek: In
     ((xmlDoc \\ xmlPathAsArray(0) \\ xmlPathAsArray(1) \\ xmlPathAsArray(2)).filter(node => (node \\ "count").text == nodeCount) \\ requestedValueName ).text.toInt
   }
 
+  def extractDistanceFromDb(schema: String, query: String, columnName: String): Int = {
+    DbManager.selectSingleCell(schema, query, columnName)
+  }
+
 
   def insertVolumeWorkout = {
     for (i <- 0 until m_weeksTillRace) {
@@ -25,7 +29,8 @@ class Creator(raceDate: DateTime, raceDistance: Int, workoutDaysAmountInWeek: In
         m_plan(i) = new WeeklyPlan
       }
       if(! m_plan(i).m_weeklySchedule.exists(workout => (workout.m_workoutType == WorkoutType.PREPARATORY_RACE))) {
-        val distance: Int = extractValueFromXml("root marathon week", String.valueOf(i), "volume")
+        val query: String = "SELECT * FROM workout_distance WHERE workout_type = 'VOLUME' AND week_before_race_count = " + (i + 1)
+        val distance: Int = extractDistanceFromDb("tpc", query, "distance")
         m_plan(i) addWorkout new Workout(WorkoutType.VOLUME_RUN, (distance * m_targetPace).toInt, distance, ApplicationConstants.VOLUME_RUN_DAY, i)
       }
     }
@@ -38,11 +43,12 @@ class Creator(raceDate: DateTime, raceDistance: Int, workoutDaysAmountInWeek: In
         m_plan(i) = new WeeklyPlan
       }
       if (! m_plan(i).m_weeklySchedule.exists(workout => (workout.m_dayOfWeek == ApplicationConstants.QUALITY_RUN_DAY))) {
-        m_plan(i) addWorkout new Workout(WorkoutType.QUALITY_RUN, i * 7, i * 3, ApplicationConstants.QUALITY_RUN_DAY, i)
+        val query: String = "SELECT * FROM workout_distance WHERE workout_type = 'QUALITY' AND week_before_race_count = " + (i + 1)
+        val distance: Int = extractDistanceFromDb("tpc", query, "distance")
+        m_plan(i) addWorkout new Workout(WorkoutType.QUALITY_RUN, (distance * m_targetPace).toInt, distance, ApplicationConstants.QUALITY_RUN_DAY, i)
       }
     }
   }
-
 
   def insertTempoWorkout = {
     for (i <- 0 until m_weeksTillRace) {
@@ -50,7 +56,8 @@ class Creator(raceDate: DateTime, raceDistance: Int, workoutDaysAmountInWeek: In
         m_plan(i) = new WeeklyPlan
       }
       if (! m_plan(i).m_weeklySchedule.exists(workout => (workout.m_dayOfWeek == ApplicationConstants.TEMPO_RUN_DAY))) {
-        val distance: Int = extractValueFromXml("root marathon week", String.valueOf(i), "tempo")
+        val query: String = "SELECT * FROM workout_distance WHERE workout_type = 'TEMPO' AND week_before_race_count = " + (i + 1)
+        val distance: Int = extractDistanceFromDb("tpc", query, "distance")
         m_plan(i) addWorkout new Workout(WorkoutType.TEMPO_RUN, (distance * m_targetPace).toInt, distance, ApplicationConstants.TEMPO_RUN_DAY, i)
       }
     }
@@ -62,7 +69,8 @@ class Creator(raceDate: DateTime, raceDistance: Int, workoutDaysAmountInWeek: In
         m_plan(i) = new WeeklyPlan
       }
       if (! m_plan(i).m_weeklySchedule.exists(workout => (workout.m_dayOfWeek == ApplicationConstants.RECOVERY_RUN_DAY))) {
-        val distance: Int = extractValueFromXml("root marathon week", String.valueOf(i), "recovery")
+        val query: String = "SELECT * FROM workout_distance WHERE workout_type = 'RECOVERY' AND week_before_race_count = " + (i + 1)
+        val distance: Int = extractDistanceFromDb("tpc", query, "distance")
         m_plan(i) addWorkout new Workout(WorkoutType.RECOVERY_RUN, (distance * m_targetPace).toInt, distance, ApplicationConstants.RECOVERY_RUN_DAY, i)
       }
     }
@@ -75,7 +83,9 @@ class Creator(raceDate: DateTime, raceDistance: Int, workoutDaysAmountInWeek: In
         m_plan(i) = new WeeklyPlan
       }
       if (! m_plan(i).m_weeklySchedule.exists(workout => (workout.m_dayOfWeek == ApplicationConstants.LITE_VOLUME_DAY))) {
-        m_plan(i) addWorkout new Workout(WorkoutType.LITE_VOLUME_RUN, (defaultLiteRunDistance * m_targetPace).toInt, defaultLiteRunDistance, ApplicationConstants.LITE_VOLUME_DAY, i)
+        val query: String = "SELECT * FROM workout_distance WHERE workout_type = 'LITE_VOLUME' AND week_before_race_count = " + (i + 1)
+        val distance: Int = extractDistanceFromDb("tpc", query, "distance")
+        m_plan(i) addWorkout new Workout(WorkoutType.LITE_VOLUME_RUN, (distance * m_targetPace).toInt, distance, ApplicationConstants.LITE_VOLUME_DAY, i)
       }
     }
   }
@@ -141,11 +151,13 @@ object Creator {
   def apply(raceDate: DateTime, raceDistance: Int, workoutDaysAmountInWeek: Int, targetPace: Float) = new Creator(raceDate, raceDistance, workoutDaysAmountInWeek, targetPace)
 
   def main(args: Array[String]) {
-    val raceDate: DateTime = new DateTime(2015,1,30,0,0,0)
-    val targetPace: Float = 5F
-    val creator: Creator = Creator(raceDate, 42, 5, targetPace)
 
-    creator.insertPreparatoryRace(new DateTime(2015,1,20,0,0,0), 57)
+    val raceDate: DateTime = new DateTime(2015,8,30,0,0,0)
+    val targetPace: Float = 5F
+    val workoutDaysInWeek: Int = 5
+    val raceDistance: Int = 42
+    val creator: Creator = Creator(raceDate, raceDistance, workoutDaysInWeek, targetPace)
+
     creator.createPlan
     println(creator.toString)
 

@@ -1,9 +1,10 @@
 package utils
 
-import java.sql.{Connection, DriverManager, ResultSet};
+import java.sql.{Connection, DriverManager, ResultSet}
+;
 
 object DbManager {
-  val conStrTemplate = "jdbc:mysql://localhost:3306/%s?user=root"
+  val conStrTemplate = "jdbc:mysql://localhost:3306/%s?user=root" // &password=yuvik2004"
   classOf[com.mysql.jdbc.Driver]
 
 
@@ -20,17 +21,21 @@ object DbManager {
     }
   }
 
-  def read (dbSchema: String, tableName: String, filter: String): ResultSet = {
+  def selectSingleCell (dbSchema: String, query: String, columnName: String): Int = {
     val conn: Connection = connect(dbSchema)
+    var distance: Int = 0
     try {
       val statement = conn.createStatement(ResultSet.TYPE_FORWARD_ONLY, ResultSet.CONCUR_READ_ONLY)
-
       // Execute Query
-      return statement executeQuery("SELECT * FROM %s WHERE %s" format (tableName, filter))
+      val rs: ResultSet = statement executeQuery query
+      while (rs.next()){
+        distance = rs getInt columnName
+      }
     }
     finally {
       conn close
     }
+    return distance
   }
 
   def write(dbSchema: String,statementTemplate: String, commaSeparatedValues: Array[String]) {
